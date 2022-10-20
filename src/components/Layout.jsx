@@ -13,57 +13,40 @@ import { ThemeSelector } from '@/components/ThemeSelector'
 
 const navigation = [
   {
-    title: 'Introduction',
+    title: 'Информация',
     links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'Предприятие', href: '/' },
+      { title: 'ИП', href: '/docs/installation' },
     ],
   },
   {
-    title: 'Core concepts',
+    title: 'Услуги',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
+      { title: 'Транспорт, перевозки', href: '/docs/understanding-caching' },
       {
-        title: 'Predicting user behavior',
+        title: 'Ремонт, строительство',
         href: '/docs/predicting-user-behavior',
       },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
+      { title: 'Красота, здоровье', href: '/docs/basics-of-time-travel' },
       {
-        title: 'Introduction to string theory',
+        title: 'Ремонт техники',
         href: '/docs/introduction-to-string-theory',
       },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
+      { title: 'Уборка, дезинсекция', href: '/docs/the-butterfly-effect' },
     ],
   },
   {
-    title: 'Advanced guides',
+    title: 'Товары',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
+      { title: 'Одежда, обувь и аксессуары ', href: '/docs/writing-plugins' },
+      { title: 'Транспорт', href: '/docs/neuralink-integration' },
+      { title: 'Работа', href: '/docs/temporal-paradoxes' },
+      { title: 'Автозапчасти и аксессуары', href: '/docs/testing' },
+      { title: 'Для дома и дачи', href: '/docs/compile-time-caching' },
       {
-        title: 'Predictive data generation',
+        title: 'Недвижимость',
         href: '/docs/predictive-data-generation',
       },
-    ],
-  },
-  {
-    title: 'API reference',
-    links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
     ],
   },
 ]
@@ -226,7 +209,7 @@ export function Layout({ children, title, tableOfContents }) {
             {previousPage && (
               <div>
                 <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-                  Previous
+                  Предыдущая
                 </dt>
                 <dd className="mt-1">
                   <Link
@@ -241,7 +224,7 @@ export function Layout({ children, title, tableOfContents }) {
             {nextPage && (
               <div className="ml-auto text-right">
                 <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-                  Next
+                  Следующая
                 </dt>
                 <dd className="mt-1">
                   <Link
@@ -263,7 +246,7 @@ export function Layout({ children, title, tableOfContents }) {
                   id="on-this-page-title"
                   className="font-display text-sm font-medium text-slate-900 dark:text-white"
                 >
-                  On this page
+                  На этой странице
                 </h2>
                 <ol role="list" className="mt-4 space-y-3 text-sm">
                   {tableOfContents.map((section) => (

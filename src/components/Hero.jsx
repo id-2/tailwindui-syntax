@@ -9,16 +9,17 @@ import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
 
 const codeLanguage = 'javascript'
-const code = `export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
+const code = `{
+  name: 'ИП Иванов Иван Иванович',
+  phone: '8 (123) 456-78-90',
+  address: {
+    city: 'Москва',
+    street: 'Ленина',
   },
 }`
 
 const tabs = [
-  { name: 'cache-advance.config.js', isActive: true },
+  { name: 'data.json', isActive: true },
   { name: 'package.json', isActive: false },
 ]
 
@@ -49,16 +50,16 @@ export function Hero() {
             />
             <div className="relative">
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Never miss the cache again.
+                Твоя глобальная записная книжка.
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                Cache every single thing your app could ever do ahead of time,
-                so your code never even has to run at all.
+                Вся информация об услугах и сферах деятельности предприятий и ИП
+                в одном месте. Всегда актуальные контактные данные!
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Get started</Button>
+                <Button href="/">Начать поиск</Button>
                 <Button href="/" variant="secondary">
-                  View on GitHub
+                  Как пользоваться
                 </Button>
               </div>
             </div>
